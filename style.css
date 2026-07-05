@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #9a23a54f;
+    overflow: hidden;
+}
+
+/* کانتینر اصلی بنر */
+.banner-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: radial-gradient(circle at center, #1a1a3a 0%, #050510 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgb(187, 17, 17);
+    box-shadow: 0 20px 50px rgb(0, 17, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/* دایره‌های نئونی پس‌زمینه */
+.bg-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgb(229, 255, 0);
+    background: linear-gradient(90deg, rgba(0,242,254,1) 0%, rgba(79,9,121,1) 100%);
+    filter: blur(120px);
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 1;
+}
+.glow-1 { top: -50px; left: -50px; }
+.glow-2 { bottom: -50px; right: -50px; }
+
+/* بخش متن‌ها */
+.banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    color: #efff0ef8;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-shadow: 0 0 10px rgb(255, 223, 41);
+}
+
+.banner-content h1 span {
+    color: #e100fffb;
+    display: block;
+}
+
+.banner-content p {
+    color: #fc3015;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn-action {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #00f2fe, #4f0979);
+    color: rgb(0, 255, 200);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+/* بخش المان‌های گرافیکی سمت راست */
+.banner-visual {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.main-sphere {
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle at 30% 30%, #00f2fe, #4f0979);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(255, 0, 0);
+}
+
+.sub-element {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 0, 128, 0.5);
+    border: 1px solid rgba(0, 242, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+.elem-1 { top: 20%; left: 10%; }
+.elem-2 { bottom: 20%; right: 10%; }
+.elem-3 { top: 60%; right: 20%; }
